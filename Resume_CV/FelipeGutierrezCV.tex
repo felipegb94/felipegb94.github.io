@@ -1,0 +1,173 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Felipe}{Gutierrez}
+\address{1520 Madison St}{Madison, WI 53711}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(608) 957 4234}                   % optional, remove / comment the line if not wanted
+\email{fgutierrez3@wisc.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{http://felipegb94.github.io}                         % optional, remove / comment the line if not wanted
+\extrainfo{Github: \href{http://github.com/felipegb94}{felipegb94}}                 % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Research Interests}
+Physics-based modeling and simulation, scientific computing, non-parametric
+statistics, machine and statistical learning.
+
+\section{Education}
+\cventry{2012--2016}{BS. Applied Math, Engineering \& Physics}{UW-Madison}{Madison, WI}{\textit{Cum. GPA: 3.4}}
+{Advisor: Dan Negrut. Senior Project: "Modeling and simulation of fluid-solid interaction problems on distributed memory architectures using the Charm++ parallel programming paradigm"}  % arguments 3 to 6 can be left empty
+\cventry{2012--2016}{BS. Computer Science (Honors)}{UW-Madison}{Madison, WI}{\textit{Major GPA: 3.6}}
+{Advisor: Vikas Singh. Thesis: "A framework for designing fast and robust permutation testing using matrix completion: Applications to neuroimaging"}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Positions Held}
+\subsection{Academic/Research}
+\cventry{2013--present}{Research Assistant}{Simulation-Based Engineering Lab}{Madison, WI}{}{Collaborated with Prof. Dan Negrut and Dr. Arman Pazouki in the study of parallel programming techniques and technologies for GPU, shared and distributed memory architectures, and their application to fluid-solid interaction problems. Other duties included developing web-based and scripting programs for pre and post processing tasks.}
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\end{itemize}}
+\cventry{2015--present}{Research Assistant}{Wisconsin ADRC Imaging Group}{Madison, WI}{}{Worked with Prof. Vikas Singh and Vamsi Ithapu on improving the scalability, validating, benchmarking, extending, and open-sourcing a novel permutation testing algorithm.}
+\subsection{Industry}
+\cventry{2014}{Explorer Intern}{Microsoft Corporation}{Seattle, WA}{}{Performed the overall development of the UX that allows Maps app users to interact with the available layers. The UX addressed desktop, phone and tablet. }
+\subsection{Previous Positions}
+\cventry{Summer 2013}{Student Help}{Madison Plasma Dynamo Experiment}{Madison, WI}{}{}
+\cventry{2012-2013}{Web Developer}{Dept. of Nutritional Sciences}{Madison, WI}{}{}
+
+\section{Awards/Honors}
+\cvitem{2015}{Blue Waters Student Internship Program - National Center for Supercomputing Applications}  % arguments 3 to 6 can be left empty
+\cvitem{2014}{Frontier Fellowship - Wisconsin Institutes for Discovery}  % arguments 3 to 6 can be left empty
+\cvitem{2013}{Welton Honors Summer Sophomore Apprenticeship Grant - Honors Program}  % arguments 3 to 6 can be left empty
+
+\section{Publications}
+\cvitem{Under Review}{\textbf{Felipe Gutierrez}, Vamsi Ithapu, Sterling C. Johnson, Vikas Singh. An SnPM toolbox for fast permutation testing using matrix completion. \textit{Under Review.} }  % arguments 3 to 6 can be left empty
+\cvitem{IDETC/DIE 2016}{\textbf{Felipe Gutierrez}, Arman Pazouki, Dan Negrut. Modeling and simulation of fluid-solid interaction problems on distributed memory architectures with Charm++. \textit{ASME IDETC/CIE}, 2016. Abstract Submitted.}
+\cvitem{IDETC/CIE 2014}{Daniel Kaczmarek, Aaron Bartholomew, \textbf{Felipe Gutierrez}, Hammad Mazhar, Dan Negrut. Chrono::Render: A graphical visualization pipeline for multibody dynamics simulations. \textit{ASME IDETC/CIE}, 2014. }
+
+\section{Presentations}
+\cventry{2015}{Machine-Ground Interaction Consortium}{}{Madison, WI}{}
+{Leveraging Charm++ for meshless fluid simulations on distributed memory architectures.}
+\cventry{2013}{UW-Madison Undergraduate Symposium}{}{Madison, WI}{}
+{Small Radio Telescope Probes Dark Matter. }
+
+\section{Computer Skills}
+\cvitem{10,000+ lines}{C, C++, Matlab.}
+\cvitem{1,000+ lines}{Python, Java, Javascript, C\#.}
+\cvitem{Parallel Tools}{CUDA, Charm++, MPI, OpenMP, ArrayFire.}
+\cvitem{Tools}{Unix-based systems, Git, \LaTeX\ , Mex, Armadillo, PostgreSQL, SQLAlchemy.}
+\cvitem{Web and App}{HTML/CSS, WebGL, Three.js, Flask, Windows App Dev.}
+
+
+\section{Outreach and Leadership}
+\cvitem{ProCSI}{Co-coordinator of Promoting the Computational Science Initiative outreach program in 2013 and 2015. Directed CAD and intro to programming modules.}
+\cvitem{Alfabetizacion}{Volunteer tutor once a week for groups of 2-4 elementary and middle school children in math and english (2010-2011).}
+\cvitem{Waterski}{UW-Madison Waterski team captain, trick coach and competing member.}
+
+
+\section{Coursework}
+\cvitem{Graduate}{Computer Vision, Stochastic Processes, Cognitive Computational Sciences and Electronic Aids in Measurement.}
+\cvitem{Comp. Sci}{Data Structures, Algorithms, Artificial Intelligence, Databases, Operating Systems.  }
+\cvitem{AMEP}{Math: 31 credits, Physics: 28 credits, Engineering: 25 credits.}
+
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Fluent}{Native Language}
+\cvitemwithcomment{English}{Fluent}{12 years of study. Lived and studied in the US for 4+ years.}
+\cvitemwithcomment{French}{Intermediate (B1+ level)}{2 years of study. Studied 6 months in France.}
+
+
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Professor Vikas Singh}{Associate Professor \newline{} Department of Computer Science\newline{} UW-Madison\newline{} vsingh@biostat.wisc.edu \newline{} 608 262 8875 }
+  \cvcolumn{Professor Dan Negrut}{Vilas Associate Professor\newline{} Department of Mechanical Engineering \newline{} UW-Madison \newline{} negrut@wisc.edu  \newline{} 608 262 8875 }
+\end{cvcolumns}
+\begin{cvcolumns}
+  \cvcolumn{Dr. Arman Pazouki}{Scientist \newline{} Department of Mechanical Engineering\newline{} UW-Madison\newline{} pazouki@gmail.com  }
+
+\end{cvcolumns}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
