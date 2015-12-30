@@ -4,7 +4,6 @@ This is the repository for my personal website. To access the website go to [fel
 
 ### Todo
 
-* Add glyphicons for phone, email, etc..
 * Make a cool header for the website. Possibilities: First Chrono::HPC simulation
 
 ### Comments
