@@ -7,8 +7,6 @@ textarea,
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-
-
 #content {
     margin-top: 5px;
     border-right: thin solid #e6e6e6;
@@ -22,10 +20,4 @@ hr{
     margin-top: 5px;
 }
 
-#current-navbar{
-    background-color: #e6e6e6;
-}
 
-/*.navbar a {
-    color: white;
-}*/
