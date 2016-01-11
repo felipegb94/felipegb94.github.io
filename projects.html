@@ -16,36 +16,102 @@
                 <div class="project">
                     <h3>CharmSPH</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="" target="_blank">Currently private project</a>
+                    <strong>Poster:</strong> <a href="" target="_blank"> CharmSPH </a>. Presented during the December meeting of the 2015 Machine-Ground Interaction Consortium.</a>
+                    <p>
+                        CharmSPH is a distributed memory smoothed particle hydrodynamics (SPH) engine that relies on the <a href="http://charmplusplus.org" target="_blank">Charm++ framework</a>. 
+                    </p>
                     <img src="images/hybrid_decomposition.jpg" width="40%" class="img-thumbnail">
+
 
                 </div>
                 <div class="project">
                     <h3>Rapid Permutation Testing</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="http://github.com/felipegb94/RapidPT" target="_blank">RapidPT</a>
+                    <p>
+                        RapidPT is the result of the effort of improving the scalability, validating, benchmarking, extending, and open-sourcing the novel permutation testing algorithm described in [add citation]. 
+                    </p>
                     <img src="images/maxnull_rapidpt_vs_snpm.jpg" width="40%" class="img-thumbnail">
+
 
                 </div>
                 <div class="project">
                     <h3>Complete Permutation Testing</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="http://github.com/felipegb94/CompletePT" target="_blank">CompletePT</a>
+                    <p>
+                        CompletePT is a repository that contains CPU and GPU implementations of the permutation testing algorithm using one-sample and two-sample t-test. The programs have been validated against the library SnPM and are currently being using for timing and accuracy comparissons with RapidPT and SnPM. The CPU implementation relies on the linear algebra library, Armadillo. The GPU implementation currently relies on ArrayFire for the computation part but uses Armadillo for some I/O
+                    </p>
+                    <p>
+                        Future goals: Make the GPU version solely depend on ArrayFire and see if  the ArrayFire community is interested in adding it to its statistics library.
+                    </p>
                 </div>
                 <div class="project">
                     <h3>SPHSim2D</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="http://github.com/felipegb94/SPHSim2D" target="_blank"> SPHSim2D</a>
+                    <p>
+                        SPHSim2D is a 2D fluid simulation program based on the Smoothed Particle Hydrodynamics (SPH) technique. The main purpose of this code is to act as a prototyping environment of boundary conditions, integration schemes and techniques to improve the simulation stability. The three basic features of the program are: fast neighbor search, leap-frog time integration, and the use of static SPH markers as wall boundaries. The ultimate goal is that as more and more SPH features are prototyped in this environment the code will evolve into a mature SPH code.
+                    </p>
+                    <ul>
+                        <li>
+                            The code is currently being used to: investigate an implicit time integration scheme.
+                        </li> 
+                        <li>
+                            Future features: A generalized wall boundary condition, periodic boundary condition, some validation model (poiseille flow or coutte flow), density reinitialization, XSPH.
+                        </li>
+                    </ul>
+
                     <img src="images/sph_discretization.jpg" width="40%" class="img-thumbnail">
 
                 </div>
                 <div class="project">
                     <h3>Macros-based CUDA and OpenMP Implementation</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="http://github.com/felipegb94/" target="_blank">pi-example</a>
+                    <p>
+                        This is an example program that can easily switch between its OpenMP and CUDA implementations by changing some flags in the CMakeLists.txt file. The program calculates pi. Using a combination of macros and one of CUDA's newest features, unified memory, almost 100% of the code could be reused. Using macros a function can act as a regular function whose for loop is embedded in a OpenMP clause, or a CUDA kernel. If the program is compiled with CUDA and unified memory is available then the function/kernel call can be made by giving it a pointer to the memory allocated with cudaMallocManaged and the OpenMP and CUDA backend will be able to write to this memory without any problem. This can be seen in pi-kernel-unified.cu. This code was also used to see the performance of Multi-threading vs. GPU in one of the developer nodes of the cluster.   
+                    </p>                  
                 </div>
                 <div class="project">
                     <h3>Metrics Database for Project Chrono</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="http://github.com/felipegb94/" target="_blank">Metrics Database</a>
+                    <p>
+                        This project was developed to record output metrics (mostly performance) of the tests that are run on the open source multi-physics engine, <a href="http://github.com/" target="_blank">Chrono</a>, and be able to query these metrics and display on a web application. In order to meet this goal I developed five pieces of code that together fully automated the process of tracking these metrics, and a sixth component that will hopefully be implemented in the future. 
+                        <ol>
+                            <li>
+                                <strong>BaseTest: </strong>First I developed a BaseTest class from which all tests that wish to report metrics are derived from. This allowed the test developers to easily report the metrics by just calling a simple function called addMetric(...). The class would then output the metrics in a JSON format.
+                            </li> 
+                            <li>
+                                <strong>Parser: </strong>The second part of the program was the parser. Whenever a push is made to Chrono there is an automated build system (buildbot based) that runs a bunch of tests, some of which are derived from BaseTest. After all the tests are ran a lot of JSON files have been generated, and builbot calls a parsing script which parses each file and adds them to a PostgreSQL database through an API call.
+                            </li> 
+                            <li>
+                                <strong>Metrics Database API: </strong>Any kind of request made to the relational database had to be done through a Flask-based API. This allowed easily handle things like reading and writing to the database, and authentication.
+                            </li> 
+                            <li>
+                                <strong>Database: </strong>A PostgreSQL database was used. The database was created and updated using a python package called SQLAlchemy. 
+                            </li> 
+                            <li>
+                                <strong>Frontend: </strong>The frontend allows Chrono developers to visualize the time evolution of the metrics. This is interesting for performance metrics since you can see how certain parts of Chrono improve (or get worse) in performance as modifications are made. But it can also be used to monitor that the accuracy of certain benchmark simulations stays over a threshold.
+                            </li> 
+                            <li>
+                                <strong>Notification System (Not implemented): </strong> A notification system will hopefully be implemented in the future. The aim of this feature is to notify Chrono users of significant performance decrease after a push is made.
+                            </li> 
+
+                        </ol>
+                    </p>                    
                 </div>
                 <div class="project">
                     <h3>Evaluation of Mesh To Point Cloud Alternatives</h3>
                     <hr>
+                    <strong>Github:</strong> <a href="http://github.com/felipegb94/" target="_blank">MeshToPC</a>
+                    <p>
+                        Together with two other members of SBEL we explored three alternatives to generate a point cloud from a mesh file (stl, obj, etc). The three approaches are briefly described <a href="Papers/MeshToPointCloud.pdf" target="_blank">here</a>.
+                    </br></br>
+                        <strong>Why? </strong>In FSI simulations that are based on a lagrangian representation of both the solid and the fluid (SPH) there is a need to have a point cloud representation of the solid. The point cloud that represents the solid are Boundary Condition Enforcing (BCE) markers which are essential to calculate the coupling forces [add citation]. For simple geometries creating a point cloud is relatively simple but for complex geometries it is not. Using modern CAD tools creating any kind of 3D geometry has become a trivial task, but all of these tools only export meshes and do not give the option to export a point cloud representation of the mesh. Therefore a mesh to point cloud converter tool is essential to develop a wide variety of FSI models.
+                    </p>                   
                 </div>
             </div>
             
