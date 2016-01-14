@@ -7,3 +7,11 @@ Papers/SoP/FelipeGutierrezSoP.ps
 Papers/SoP/FelipeGutierrezSoP.synctex.gz
 texput.log
 *.aux
+*.dvi
+*.blg
+*.log
+*.out
+*.gz
+*.toc
+Papers/TR-MeshToPointCloudTool/figures
+*.synctex
