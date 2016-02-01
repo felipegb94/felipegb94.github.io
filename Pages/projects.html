@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head> </head>
-
-<body>
-    <div id="navbar-container"></div>
-
-<!--     <div id="header-container"></div>
- -->
     <!-- Page Content -->
-    <div class="container">
+    <div id="projects-content">
 
         <div class="row">
             <div class="col-sm-8" id="content">
@@ -48,7 +39,6 @@
                         <h4>Other</h4>
                         <ul>
                             <li><a href="#EvalMeshToPC">Evalutation of Mesh To Point Cloud Approaches</a></li>
-                            <li><a href="#ProgrammingNotes">Programming Notes</a></li>
                         </ul>
                     </div>
                 </div>
@@ -211,34 +201,8 @@
                         </p>  
                     </div>                
                 </div>   
-                <div id="ProgrammingNotes" class="row project">
-                    <h3>Programming Notes</h3>
-                    <hr>
-                    <div class="col-sm-12 project-description">
-                        <strong>The importance of caching</strong> 
-                        <p>When working in the space debris modeling problem during the Math Competition in Modeling, my teammates and I improved the performance of our MATLAB code by 200x by just one simple caching trick. We had a very large matrix called history (nx600,000) and this matrix was passed to a function at every time step. It would access two different parts of the matrix inside the function and then return a result. Just by moving that function into the code OR making it a MATLAB subfunction we got the 200x performance increase. We belive that the reason for this was that everything that was being brought into cache by the function was being erased when were exiting it making it very slow. When we made it a subfunction it was keeping everything in cache making the performance increase huge because from time step to time step we access very similar spots of the matrix.</p>
-                    </div>                
-                </div> 
             </div>
-            <div id="sidebar-container"></div>
         </div>
-        <hr>
-        <div id="footer-container"></div>
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Core Javascript -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-    <!-- Bootstrap Core Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script>
-        $('head').load('head.html')
-        $('#navbar-container').load('navbar.html')
-        $('#header-container').load('header.html')
-        $('#footer-container').load('footer.html')
-        $('#sidebar-container').load('sidebar.html')
-    </script>
-</body>
-
-</html>

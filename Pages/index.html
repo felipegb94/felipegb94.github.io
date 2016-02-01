@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> </head>
+<head>
+</head>
 
 <body>
     <div id="navbar-container"></div>
@@ -13,14 +14,18 @@
 
         <div class="row">
             <div class="col-sm-8" id="content">
-                Content Goes Here
-            </div>
-            
 
+            </div>
             <div id="sidebar-container"></div>
         </div>
+        <!-- /.row -->
+
         <hr>
-        <div id="footer-container"></div>
+
+        <div id="footer-container">
+        </div>
+
+
     </div>
     <!-- /.container -->
 
@@ -30,11 +35,12 @@
     <!-- Bootstrap Core Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script>
-        $('head').load('head.html')
-        $('#navbar-container').load('navbar.html')
-        $('#header-container').load('header.html')
-        $('#footer-container').load('footer.html')
-        $('#sidebar-container').load('sidebar.html')
+        $('head').load('head.html');
+        $('#navbar-container').load('Template/navbar.html');
+        $('#header-container').load('Template/header.html');
+        $('#footer-container').load('Template/footer.html');
+        $('#sidebar-container').load('Template/sidebar.html');
+        //$('#content').load('index-content.html');
     </script>
 </body>
 
