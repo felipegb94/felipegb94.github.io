@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 JAN 2016 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 FEB 2016 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,7 +719,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package hyperref Info: Option `breaklinks' set `true' on input line 47.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 47.
 
-No file FelipeGutierrezCV.aux.
+(./FelipeGutierrezCV.aux)
 \openout1 = `FelipeGutierrezCV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -739,6 +739,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 47.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -842,6 +843,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 47.
 LaTeX Info: Redefining \pageref on input line 47.
 LaTeX Info: Redefining \nameref on input line 47.
+
+(./FelipeGutierrezCV.out) (./FelipeGutierrezCV.out)
 \@outlinefile=\write3
 \openout3 = `FelipeGutierrezCV.out'.
 
@@ -917,21 +920,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
  (./FelipeGutierrezCV.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
-
-
-Package rerunfilecheck Warning: File `FelipeGutierrezCV.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `FelipeGutierrezCV.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F09EE9B5F04686C3D6BD2872D40B1956;1605.
+Package rerunfilecheck Info: File `FelipeGutierrezCV.out' has not changed.
+(rerunfilecheck)             Checksum: F09EE9B5F04686C3D6BD2872D40B1956;1605.
  ) 
 Here is how much of TeX's memory you used:
- 17169 strings out of 493117
- 283081 string characters out of 6135433
- 382778 words of memory out of 5000000
- 20410 multiletter control sequences out of 15000+600000
+ 17190 strings out of 493117
+ 283388 string characters out of 6135433
+ 382875 words of memory out of 5000000
+ 20425 multiletter control sequences out of 15000+600000
  67392 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,45p,10369b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -943,10 +939,10 @@ type1/public/lm/lmss8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
 c/lm/lmssbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lms
 so10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/marvosym/marvos
 ym.pfb>
-Output written on FelipeGutierrezCV.pdf (2 pages, 148536 bytes).
+Output written on FelipeGutierrezCV.pdf (2 pages, 149330 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  17 named destinations out of 1000 (max. 500000)
- 20993 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 21105 words of extra memory for PDF output out of 24883 (max. 10000000)
 
