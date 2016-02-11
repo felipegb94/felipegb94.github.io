@@ -5,6 +5,7 @@ This is the repository for my personal website. To access the website go to [fel
 ### Todo
 
 * Make a cool header for the website. Possibilities: First Chrono::HPC simulation
+* Switch to Jekyll + Yaml. Much easier to add projects and start creating blog posts.
 
 ### Comments
 
