@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -24,7 +24,7 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Felipe}{Gutierrez}
+\name{Felipe}{Gutierrez Barragan}
 \address{1520 Madison St}{Madison, WI 53711}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(608) 957 4234}                   % optional, remove / comment the line if not wanted
 \email{fgutierrez3@wisc.edu}                               % optional, remove / comment the line if not wanted
@@ -53,19 +53,26 @@
 Scientific computing, machine and statistical learning, high-performance computing, physics-based modeling and simulation, and non-parametric statistics.
 
 \section{Education}
-\cventry{2012--2016}{BS. Applied Math, Engineering \& Physics}{UW-Madison}{}{\textit{Cum. GPA: 3.4}}
+\cventry{2016--}{Ph.D. Candidate, Computer Science}{University of Wisconsin-Madison}{}{}
+{}
+\cventry{2012--2016}{BS. Applied Math, Engineering \& Physics}{University of Wisconsin-Madison}{}{}
 {Advisor: Dan Negrut. Senior Project: "Modeling and simulation of fluid-solid interaction problems on distributed memory architectures using the Charm++ parallel programming paradigm"}  % arguments 3 to 6 can be left empty
-\cventry{2012--2016}{BS. Computer Science (Honors)}{UW-Madison}{}{\textit{Major GPA: 3.6}}
+\cventry{2012--2016}{BS. Computer Science (Honors)}{University of Wisconsin-Madison}{}{}
 {Advisor: Vikas Singh. Thesis: "A framework for designing fast and robust permutation testing using matrix completion: Applications to neuroimaging"}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+%%\section{Master thesis}
+%%\cvitem{title}{\emph{Title}}
+%%\cvitem{supervisors}{Supervisors}
+%%\cvitem{description}{Short thesis abstract}
 
 \section{Positions Held}
-\subsection{Academic/Research}
-\cventry{2013--present}{Research Assistant}{Simulation-Based Engineering Lab}{Madison, WI}{}{Collaborated with Prof. Dan Negrut and Dr. Arman Pazouki in the study of parallel programming techniques and technologies for GPU, shared and distributed memory architectures, and their application to fluid-solid interaction problems. Other duties included developing web-based and scripting programs for pre and post processing tasks.}
+\subsection{\textbf{Academic/Research}}
+\cventry{2013--present}{Research Assistant}{Simulation-Based Engineering Lab}{Madison, WI}{}{
+\begin{itemize}
+	\item Investigate and implement parallel programming techniques and technologies to develop a distributed memory fluid-solid interaction engine.
+	\item Developed the full-stack of a web app that records and displays the performance and testing metrics of \textit{Chrono}.
+	\item Write web-based and scripting programs for pre and post processing tasks.
+\end{itemize}}
 %Detailed achievements:%
 %\begin{itemize}%
 %\item Achievement 1;
@@ -81,28 +88,40 @@ Scientific computing, machine and statistical learning, high-performance computi
 %  \item Sub-achievement (c);
 %  \end{itemize}
 %\end{itemize}}
-\cventry{2015--present}{Research Assistant}{Wisconsin ADRC Imaging Group}{Madison, WI}{}{Worked with Prof. Vikas Singh and Vamsi Ithapu on improving the scalability, validating, benchmarking, extending, and open-sourcing a novel permutation testing algorithm.}
-\subsection{Industry}
-\cventry{Summer 2014}{Explorer Intern}{Microsoft Corporation}{Seattle, WA}{}{Performed the overall development of the UX that allows Maps app users to interact with the available layers. The UX addressed desktop, phone and tablet. }
-\subsection{Previous Positions}
+\cventry{2015--present}{Research Assistant}{Wisconsin ADRC Imaging Group}{Madison, WI}{}{
+\begin{itemize}
+	\item Worked with Prof. Vikas Singh and Vamsi Ithapu on improving the scalability, validating, benchmarking, 	extending, and open-sourcing a novel permutation testing algorithm.
+\end{itemize}}
+\subsection{\textbf{Industry}}
+\cventry{Summer 2016}{SW Performance Intern}{Cray Inc}{St Paul, MN}{}{}
+\cventry{Summer 2014}{Explorer Intern}{Microsoft Corporation}{Seattle, WA}{}{
+\begin{itemize}
+	\item Performed the overall development of the UX that allows Maps app users to interact with the available layers. The UX addressed desktop, phone and tablet.
+\end{itemize} }
+\subsection{\textbf{Previous Positions}}
 \cventry{Summer 2013}{Student Help}{Madison Plasma Dynamo Experiment}{Madison, WI}{}{}
 \cventry{2012-2013}{Web Developer}{Dept. of Nutritional Sciences}{Madison, WI}{}{}
-
-\section{Awards/Honors}
-\cvitem{2015}{Blue Waters Student Internship Program - National Center for Supercomputing Applications}  % arguments 3 to 6 can be left empty
-\cvitem{2014}{Frontier Fellowship - Wisconsin Institutes for Discovery}  % arguments 3 to 6 can be left empty
-\cvitem{2013}{Welton Honors Summer Sophomore Apprenticeship Grant - Honors Program}  % arguments 3 to 6 can be left empty
 
 \section{Publications}
 \cvitem{In Preparation}{\textbf{Felipe Gutierrez}, Vamsi Ithapu, Sterling C. Johnson, Vikas Singh. An SnPM toolbox for fast permutation testing using matrix completion. \textit{In Preparation.} }  % arguments 3 to 6 can be left empty
 \cvitem{IDETC/DIE 2016}{\textbf{Felipe Gutierrez}, Arman Pazouki, Dan Negrut. Distributed Memory Fluid-Solid Interaction Simulations via Chrono::HPC. \textit{ASME IDETC/CIE}, 2016. Abstract Accepted.}
 \cvitem{IDETC/CIE 2014}{Daniel Kaczmarek, Aaron Bartholomew, \textbf{Felipe Gutierrez}, Hammad Mazhar, Dan Negrut. Chrono::Render: A graphical visualization pipeline for multibody dynamics simulations. \textit{ASME IDETC/CIE}, 2014. }
 
+\section{Awards/Honors}
+\cvitem{2015}{Blue Waters Student Internship Program - National Center for Supercomputing Applications}  % arguments 3 to 6 can be left empty
+\cvitem{2014}{Frontier Fellowship - Wisconsin Institutes for Discovery}  % arguments 3 to 6 can be left empty
+\cvitem{2013}{Welton Honors Summer Sophomore Apprenticeship Grant - Honors Program}  % arguments 3 to 6 can be left empty
+
 \section{Presentations}
 \cventry{2015}{Machine-Ground Interaction Consortium}{}{Madison, WI}{}
-{Leveraging Charm++ for meshless fluid simulations on distributed memory architectures.}
-\cventry{2013}{UW-Madison Undergraduate Symposium}{}{Madison, WI}{}
-{Small Radio Telescope Probes Dark Matter. }
+{\begin{itemize}
+\item Leveraging Charm++ for meshless fluid simulations on distributed memory architectures.
+\end{itemize}}
+\cventry{2016, 2013}{UW-Madison Undergraduate Symposium}{}{Madison, WI}{}
+{\begin{itemize}
+\item Distributed Memory Fluid-Solid Interaction Simulations (2016)
+\item Small Radio Telescope Probes Dark Matter (2013)
+\end{itemize}}
 
 \section{Computer Skills}
 \cvitem{10,000+ lines}{C, C++, Matlab.}
@@ -137,7 +156,9 @@ Scientific computing, machine and statistical learning, high-performance computi
   \cvcolumn{Professor Dan Negrut}{Vilas Associate Professor\newline{} Department of Mechanical Engineering \newline{} UW-Madison \newline{} negrut@wisc.edu  \newline{} 608 262 8875 }
 \end{cvcolumns}
 \begin{cvcolumns}
-  \cvcolumn{Dr. Arman Pazouki}{Scientist \newline{} Department of Mechanical Engineering\newline{} UW-Madison\newline{} pazouki@gmail.com  }
+
+  \cvcolumn{Dr. Arman Pazouki}{Research Associate \newline{} Department of Mechanical Engineering\newline{} UW-Madison\newline{} pazouki@gmail.com  }
+  \cvcolumn{Dr. Radu Serban}{Associate Scientist\newline{} Department of Mechanical Engineering \newline{} UW-Madison \newline{} serban@wisc.edu }
 
 \end{cvcolumns}
 
