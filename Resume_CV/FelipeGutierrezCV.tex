@@ -18,6 +18,9 @@
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
+\usepackage{verbatim}
+
+
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
@@ -25,7 +28,7 @@
 
 % personal data
 \name{Felipe}{Gutierrez Barragan}
-\address{1520 Madison St}{Madison, WI 53711}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{2111 University Ave}{Madison, WI 53726}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(608) 957 4234}                   % optional, remove / comment the line if not wanted
 \email{fgutierrez3@wisc.edu}                               % optional, remove / comment the line if not wanted
 \homepage{felipegb94.github.io}                         % optional, remove / comment the line if not wanted
@@ -50,28 +53,43 @@
 \makecvtitle
 
 \section{Research Interests}
-Scientific computing, machine and statistical learning, high-performance computing, physics-based modeling and simulation.
+Computer vision, machine and statistical learning, scientific computing high-performance computing, physics-based modeling and simulation.
 
 \section{Education}
-\cventry{2016}{Ph.D. Student, Computer Science}{University of Wisconsin-Madison}{}{}
-{}
-\cventry{2012--2016}{BS. Applied Math, Engineering \& Physics}{University of Wisconsin-Madison}{}{}
-{Advisor: Dan Negrut. Senior Project: "Modeling and simulation of fluid-solid interaction problems on distributed memory architectures using the Charm++ parallel programming paradigm"}  % arguments 3 to 6 can be left empty
-\cventry{2012--2016}{BS. Computer Science (Honors)}{University of Wisconsin-Madison}{}{}
-{Advisor: Vikas Singh. Thesis: "A framework for designing fast and robust permutation testing using matrix completion: Applications to neuroimaging"}
+\cventry{2016--present}{University of Wisconsin-Madison}{Ph.D. Student, Computer Science}{}{}
+{\begin{itemize}
+\item \textit{Advisor: Mohit Gupta.}
+\end{itemize}}
+
+\cventry{2012--2016}{University of Wisconsin-Madison}{B.S in Applied Math and Computer Science}{}{}
+{\begin{itemize}
+\item \textit{Applied Math Advisor: Dan Negrut}. Senior Project: "Modeling and simulation of fluid-solid interaction problems on distributed memory architectures using the Charm++ parallel programming paradigm"
+\item \textit{Computer Science Advisor: Vikas Singh}. Thesis: "Accelerating Permutation Testing in Neuroimaging through Subspace Tracking"
+\end{itemize}}  % arguments 3 to 6 can be left empty
+\cventry{2015, 2016}{Summer Schools}{}{}{}
+{Argonne Training Program in Extreme-Scale Computing (2016), Blue Waters Internship Workshop (2015).}
 
 %%\section{Master thesis}
 %%\cvitem{title}{\emph{Title}}
 %%\cvitem{supervisors}{Supervisors}
 %%\cvitem{description}{Short thesis abstract}
 
-\section{Positions Held}
+\section{Selected Positions}
 \subsection{\textbf{Academic/Research}}
-\cventry{2013--present}{Research Assistant}{Simulation-Based Engineering Lab}{Madison, WI}{}{
+\cventry{2016--present}{Research Assistant}{Computer Vision Group}{Madison, WI}{}{
+\begin{itemize}
+	\item Investigate optimal modulation and demodulation waveforms for Correlation-based Time of Flight Imaging.
+\end{itemize}}
+\cventry{2016--present}{Project Assistant}{PEOPLE Program}{Madison, WI}{}{}
+\cventry{2015--2016}{Research Assistant}{Wisconsin ADRC Imaging Group}{Madison, WI}{}{
+\begin{itemize}
+	\item Developed RapidPT, an open-source MATLAB toolbox that accelerates permutation testing in neuroimaging by leveraging low-rank matrix completion.
+\end{itemize}}
+\cventry{2013--2016}{Research Assistant}{Simulation-Based Engineering Lab}{Madison, WI}{}{
 \begin{itemize}
 	\item Investigate and implement parallel programming techniques and technologies to develop a distributed memory fluid-solid interaction engine.
 	\item Developed the full-stack of a web app that records and displays the performance and testing metrics of \textit{Chrono}.
-	\item Developed web-based and scripting programs for pre and post processing tasks such as: model setup and rendering.
+	\item Implemented web-based and scripting appls for pre/post processing tasks such as: model setup and rendering.
 \end{itemize}}
 %Detailed achievements:%
 %\begin{itemize}%
@@ -88,34 +106,41 @@ Scientific computing, machine and statistical learning, high-performance computi
 %  \item Sub-achievement (c);
 %  \end{itemize}
 %\end{itemize}}
-\cventry{2015--present}{Research Assistant}{Wisconsin ADRC Imaging Group}{Madison, WI}{}{
-\begin{itemize}
-	\item Developed RapidPT, an open-source MATLAB toolbox for fast and efficient permutation testing with state of the art performance. The permutation testing procedure is accelerated through low-rank matrix completion.
-\end{itemize}}
+
 \subsection{\textbf{Industry}}
-\cventry{Summer 2016}{SW Performance Intern}{Cray Inc}{St Paul, MN}{}{}
+\cventry{Summer 2016}{SW Performance Intern}{Cray Inc}{St Paul, MN}{}{\begin{itemize}
+	\item Implemented and evaluated the performance of shared, distributed, and hybrid implementations of a bioinformatics application in different high performance computing architectures.
+\end{itemize} }
 \cventry{Summer 2014}{Explorer Intern}{Microsoft Corporation}{Seattle, WA}{}{
 \begin{itemize}
-	\item Performed the overall development of the UX that allows Maps app users to interact with the available layers. The UX addressed desktop, phone and tablet.
+	\item Developed the desktop, phone and tablet UX that allows Maps app users to interact with the available layers. 
 \end{itemize} }
+
+\begin{comment}
 \subsection{\textbf{Previous Positions}}
 \cventry{Summer 2013}{Student Help}{Madison Plasma Dynamo Experiment}{Madison, WI}{}{}
 \cventry{2012-2013}{Web Developer}{Dept. of Nutritional Sciences}{Madison, WI}{}{}
+\end{comment}
 
 \section{Publications}
-\cvitem{In Preparation}{\textbf{Felipe Gutierrez}, Vamsi Ithapu, Sterling C. Johnson, Vikas Singh. Accelerating Permutation Testing in Neuroimaging through Subspace Tracking. \textit{In Preparation.} }  % arguments 3 to 6 can be left empty
-\cvitem{IDETC/DIE 2016}{\textbf{Felipe Gutierrez}, Arman Pazouki, Dan Negrut. Distributed Memory Fluid-Solid Interaction Simulations via Chrono::HPC. \textit{ASME IDETC/CIE}, 2016. Abstract Accepted.}
+\subsection{\textbf{Preprints \& Working Papers}}
+\cvitem{In Preparation}{\textbf{Felipe Gutierrez-Barragan}, Vamsi Ithapu, Sterling C. Johnson, Vikas Singh. Accelerating Permutation Testing in Neuroimaging through Subspace Tracking. \textit{In Preparation.} }  % arguments 3 to 6 can be left empty
+\subsection{\textbf{Conference \& Journal Articles}}
 \cvitem{IDETC/CIE 2014}{Daniel Kaczmarek, Aaron Bartholomew, \textbf{Felipe Gutierrez}, Hammad Mazhar, Dan Negrut. Chrono::Render: A graphical visualization pipeline for multibody dynamics simulations. \textit{ASME IDETC/CIE}, 2014. }
-
-\section{Achievements/Awards}
-\cvitem{2016}{Argonne Training Program on Extreme-Scale Computing}  % arguments 3 to 6 can be left empty
+\subsection{Conference Abstracts, Presentations, \& Posters}
+\cvitem{IDETC/DIE 2016}{\textbf{Felipe Gutierrez}, Arman Pazouki, Dan Negrut. Distributed Memory Fluid-Solid Interaction Simulations via Chrono::HPC. Presented at \textit{ASME IDETC/CIE}, 2016. Technical Report under preparation.}
+\cvitem{Poster Presentation}{Leveraging Charm++ for meshless fluid simulations on distributed memory architectures. Presented at \textit{Blue Waters Symposium 2016} and \textit{Machine-Ground Interaction Consortium 2015} .}
+\section{Selected Achievements/Awards}
 \cvitem{2016}{Meritorious Winner in the 2016 Mathematical Contest in Modeling (MCM)}  % arguments 3 to 6 can be left empty
-\cvitem{2016}{AMEP Leadership Prize - Math Department}  % arguments 3 to 6 can be left empty
+\cvitem{2016}{AMEP Leadership Prize - UW-Madison Math Department}  % arguments 3 to 6 can be left empty
 \cvitem{2016}{Blue Waters Symposium Travel Grant}  % arguments 3 to 6 can be left empty
 \cvitem{2015}{Blue Waters Student Internship Program - National Center for Supercomputing Applications}  % arguments 3 to 6 can be left empty
+\begin{comment}
 \cvitem{2014}{Frontier Fellowship - Wisconsin Institutes for Discovery}  % arguments 3 to 6 can be left empty
 \cvitem{2013}{Welton Honors Summer Sophomore Apprenticeship Grant - Honors Program}  % arguments 3 to 6 can be left empty
+\end{comment}
 
+\begin{comment}
 \section{Presentations}
 \cventry{2015}{Machine-Ground Interaction Consortium}{}{Madison, WI}{}
 {\begin{itemize}
@@ -126,10 +151,11 @@ Scientific computing, machine and statistical learning, high-performance computi
 \item Distributed Memory Fluid-Solid Interaction Simulations (2016)
 \item Small Radio Telescope Probes Dark Matter (2013)
 \end{itemize}}
+\end{comment}
 
 \section{Computer Skills}
-\cvitem{10,000+ lines}{C, C++, Matlab.}
-\cvitem{1,000+ lines}{Python, Java, Javascript, C\#.}
+\cvitem{10,000+ lines}{C, C++, Python, Matlab.}
+\cvitem{1,000+ lines}{Java, Javascript, C\#.}
 \cvitem{Parallel Tools}{CUDA, Charm++, MPI, OpenMP, ArrayFire.}
 \cvitem{Tools}{Unix-based systems, CMake, Makefiles, Git, \LaTeX\ , Mex, Armadillo, PostgreSQL, SQLAlchemy.}
 \cvitem{Web and App}{HTML/CSS, WebGL, Three.js, Flask, Windows App Dev.}
