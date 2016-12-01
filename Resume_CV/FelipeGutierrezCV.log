@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.21)  30 NOV 2016 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.21)  1 DEC 2016 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,13 +1304,6 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 62.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
-
-Underfull \hbox (badness 1521) in paragraph at lines 132--132
-[]|\T1/lmss/m/n/10.95 (+20) Daniel Kacz-marek, Aaron Bartholomew, \T1/lmss/bx/n
-/10.95 Fe-lipe Gutier-rez\T1/lmss/m/n/10.95 (+20) , Ham-mad Mazhar, Dan Ne-grut
-.
- []
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
@@ -1324,20 +1317,20 @@ Package rerunfilecheck Info: File `FelipeGutierrezCV.out' has not changed.
 (rerunfilecheck)             Checksum: 71E55221A4E62E971D00C72BF516EC0B;2202.
  ) 
 Here is how much of TeX's memory you used:
- 28425 strings out of 493029
- 522063 string characters out of 6136234
+ 28427 strings out of 493029
+ 522087 string characters out of 6136234
  587319 words of memory out of 5000000
  31509 multiletter control sequences out of 15000+600000
- 70261 words of font info for 77 fonts, out of 8000000 for 9000
+ 70362 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,20n,58p,10369b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,20n,58p,10369b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/marvosym/marvosym.pfb>
-Output written on FelipeGutierrezCV.pdf (2 pages, 152959 bytes).
+Output written on FelipeGutierrezCV.pdf (2 pages, 152891 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams
