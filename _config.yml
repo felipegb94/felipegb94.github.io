@@ -7,8 +7,8 @@ email: fgutierrez3@wisc.edu
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 
-url:  # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
+url: http://pages.cs.wisc.edu # the base hostname & protocol for your site
+baseurl: /~felipe/ # the subpath of your site, e.g. /blog/
 
 # Social
 github_username: felipegb94 # put your github username
@@ -60,6 +60,11 @@ gems:
     - jekyll-paginate
     - jekyll/scholar
     - jemoji
+
+# whitelist:
+#     - jekyll-paginate
+#     - jekyll/scholar
+#     - jemoji
 
 # gems:
 #   - 'jekyll/scholar'
