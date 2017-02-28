@@ -14,4 +14,3 @@ In order to keep the repository as light-weight as possible I am linking bootstr
 ### Acknowledgements
 
 This personal website was created using a combination of different bootstrap templates obtained from [Start Bootstrap](http://startbootstrap.com/).
-

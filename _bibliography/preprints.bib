@@ -1,0 +1,11 @@
+@article{gutierrez17,
+	author      = {Gutierrez-Barragan, Felipe and Ithapu, Vamsi and Hinrichs, Chris and Maumet, Camille and  Johnson, Sterling C. and Nichols, Tom E. and Singh, Vikas.},
+	title       = {Accelerating Permutation Testing in Voxel-wise Analysis through Subspace Tracking: A new plugin for SnPM},
+	version     = {1},
+	date        = {2017-02-15},
+	eprinttype  = {arxiv},
+	eprint      = {1008.2849v1},
+	code = {https://github.com/felipegb94/RapidPT},
+	abstract = {Permutation testing is a non-parametric method for obtaining the max null distribution used to compute corrected p-values to provide strong control of false positives. In neuroimaging, however, the computational burden of running such algorithm can be probihitively slow. We find that by viewing the permutation testing procedure as the construction of a very large permutation testing matrix T one can exploit structural properties derived from the data and the test statistics to reduce the overall runtime under certain conditions. In particular, we see that T has a low-rank plus a low-variance residual. This makes T a good candidate for low-rank matrix completion methods, where only a relatively small number of entries of T ( 0.35% of all entries) have to be computed to obtain good estimate of it. Based on this observation we developed an algorithmic framework, we called RapidPT, that is able to efficiently recover the max null distribution commonly obtained through regular permutation testing. We present an extensive experimental validation on 4 varying sized datasets against two baselines: Statistical NonParametric Mapping (SnPM13) and a regular permutation testing implementation (referred to as NaivePT). We find that RapidPT achieves its best runtime performance on medium sized datasets (50 ≤ n ≤ 200), outperforming both baselines on all datasets (SnPM13: 1.5x - 38x, NaivePT: 20x-1000x). For larger datasets (n ≥ 200) RapidPT is able to outperform NaivePT (6x - 200x) on all datasets, and provide substantial speedups over SnPM13 when performing more than 10000 permutations (2x - 15x). The MATLAB implementation is freely available as a stand alone toolbox called RapidPT or as a plugin in SnPM13, and is able to leverage multi-core architectures when available.}
+}
+
