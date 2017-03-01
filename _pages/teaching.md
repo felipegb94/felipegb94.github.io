@@ -5,7 +5,7 @@ title: teaching
 description: Teaching experiences.
 ---
 
-* UW-Madison [CS 766: Computer Vision](http://pages.cs.wisc.edu/~mohitg/courses/CS766/).
+* [CS 766: Computer Vision](http://pages.cs.wisc.edu/~mohitg/courses/CS766/).
     - Teaching Assistant
     - Instructor: [Prof. Mohit Gupta](https://www.cs.wisc.edu/people/mohitg)
     - *UW-Madison, Spring 2017*
