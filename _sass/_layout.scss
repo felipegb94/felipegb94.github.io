@@ -92,8 +92,8 @@
  *****************************************************************************/
 .news {
     border-top: 1px solid $grey-color-light;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 15px;
+    padding-top: 10px;
 
     h2 { margin-bottom: 10px; }
     table {
@@ -113,8 +113,8 @@
  *****************************************************************************/
 .social {
     border-top: 1px solid $grey-color-light;
-    margin-top: 50px;
-    padding-top: 20px;
+    margin-top: 15px;
+    padding-top: 10px;
 }
 
 /*****************************************************************************
@@ -310,7 +310,50 @@
     font-style: normal;
 }
 
- /*****************************************************************************
+/*****************************************************************************
+ * Projects List
+ *****************************************************************************/
+
+
+
+.project-entry {
+    // box-sizing: border-box;
+    width: 100%;
+    // height: auto;
+    display: block;
+    clear:both;
+    // margin-top: 25px;
+    // margin-bottom: 25px;
+    // padding-top: 25px;
+    padding-bottom: 20px;
+
+    // margin-right: 0px;
+    // margin-left: 0px;
+    img { 
+        // clear: left;
+        float: left;
+        border: 1px black;
+        // margin-top: 0px;
+        // margin-bottom: 10px;
+        margin-right: 0px;
+        // margin-left: 0px;
+        // max-height:175px;
+        height: auto;
+        width: 20%;
+    }
+    p {
+        margin-left: 10px;
+        padding: 0 0 0 21%;
+        font-size: 14px; 
+    }
+    .project-entry-title{
+        font-weight: bold;
+        color: #B03A2E;
+    }
+}
+
+
+/*****************************************************************************
  * Projects
  *****************************************************************************/
 .project {
@@ -321,6 +364,7 @@
     vertical-align: middle;
     width: 33.33%;
 }
+
 .thumbnail {
     overflow: hidden;
     height: 230px;

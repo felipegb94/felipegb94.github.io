@@ -9,7 +9,7 @@
         <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
 
         <!-- Blog -->
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
+        <!-- <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a> -->
 
         <!-- Pages -->
         {% for page in site.pages %}
@@ -17,7 +17,7 @@
             <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-        <a class="page-link" href="{{ site.baseurl }}/assets/cv/FelipeGutierrezCV.pdf" target="_blank">CV</a>
+        <a class="page-link" href="{{ site.baseurl }}/assets/cv/CurriculumVitae_FelipeGutierrez.pdf" target="_blank">resume</a>
 
       </div>
     </nav>

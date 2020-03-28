@@ -1,3 +1,4 @@
 #!/bin/bash
 
-jekyll build --incremental
+# jekyll build --incremental
+bundle exec jekyll build

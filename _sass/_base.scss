@@ -13,8 +13,8 @@ dl, dd, ol, ul, figure {
 /** Variables **********************************************/
 $base-font-family:              Helvetica, sans-serif;
 $base-line-height:              1.5em;
-$horizontal-spacing-unit:       50px;
-$vertical-spacing-unit:         40px;
+$horizontal-spacing-unit:       10px;
+$vertical-spacing-unit:         15px;
 $nav-height:                    56px;
 
 /* portfolio tinkering */
@@ -204,8 +204,8 @@ div.equation {
  */
 
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+    max-width: -webkit-calc(900px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(900px - (#{$horizontal-spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $horizontal-spacing-unit;
@@ -213,8 +213,8 @@ div.equation {
     @extend .clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit}));
-        max-width:         calc(800px - (#{$horizontal-spacing-unit}));
+        max-width: -webkit-calc(900px - (#{$horizontal-spacing-unit}));
+        max-width:         calc(900px - (#{$horizontal-spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }

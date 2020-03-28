@@ -1,0 +1,51 @@
+{% assign project = include.project %}
+
+<div class="project-entry">
+    {% if project.img %}
+    <img src="{{ project.img | prepend: site.baseurl | prepend: site.url }}" />
+    {% else %}
+    <img src="{{ '/assets/img/placeholder.png' | prepend: site.baseurl | prepend: site.url }}" />
+    {% endif %}
+    <p>
+        <span>
+            {% if project.webpage %}    
+            <a class="project-entry-title" href="{{ project.webpage }}" target='_blank'>{{project.title}}</a>
+            {% else %}
+            <a class="project-entry-title" href="#">{{project.title}}</a>
+            {% endif %}
+            <br>
+            {{project.description}}
+            {% if project.publisher %}
+                <br>    
+                This work was published in <i>{{project.publisher}}</i>.
+            {% endif %}
+            {% if project.course %}    
+                <br>    
+                This was the final project for {{project.course}}.
+            {% endif %}
+            {% if project.presented %}    
+                <br>    
+                This work was presented at {{project.presented}}.
+            {% endif %}
+            <br>
+            {% if project.paper %}    
+                [<a href="{{ project.paper }}" target='_blank'>Paper</a>]
+            {% endif %}
+            {% if project.slides %}    
+                [<a href="{{ project.slides | prepend: site.baseurl | prepend: site.url }}" target='_blank'>Slides</a>]
+            {% endif %}
+            {% if project.repository %}    
+                [<a href="{{ project.repository }}" target='_blank'>Code Repository</a>]
+            {% endif %}
+            {% if project.report %}    
+                [<a href="{{ project.report | prepend: site.baseurl | prepend: site.url }}" target='_blank'>Technical Report</a>]
+            {% endif %}
+            {% if project.webpage %}    
+                [<a href="{{ project.webpage }}" target='_blank'>Webpage</a>]
+            {% endif %}
+            {% if project.poster %}    
+                [<a href="{{ project.poster | prepend: site.baseurl | prepend: site.url }}" target='_blank'>Poster</a>]
+            {% endif %}
+        </span>
+    </p>
+</div>

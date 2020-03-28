@@ -5,8 +5,9 @@
 name: Felipe Gutierrez Barragan
 email: fgutierrez3@wisc.edu
 description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Felipe Gutierrez - Computer Sciences Graduate Student at UW Madison
 
+##### URLs of actual site
 url: http://pages.cs.wisc.edu # the base hostname & protocol for your site
 baseurl: /~felipe # the subpath of your site, e.g. /blog/
 
@@ -35,6 +36,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  project-entries:
+    output: true
+    permalink: /project-entries/:path/
   # poetry:
   #   output: true
   #   permalink: /poetry/:path/
@@ -56,10 +60,11 @@ paginate_path: /blog/page:num/
 include: ['_pages']
 
 # Gems
-gems:
-    - jekyll-paginate
-    - jekyll/scholar
-    - jemoji
+# gems:
+plugins:
+  - jekyll-paginate
+  - jekyll/scholar
+  - jemoji
 
 # whitelist:
 #     - jekyll-paginate

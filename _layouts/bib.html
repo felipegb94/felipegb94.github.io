@@ -65,16 +65,22 @@
 
   <span class="links">
   {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
+    [<a class="abstract">abstract</a>]
   {% endif %}
   {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+    [<a href="{{ entry.html }}" target="_blank">html</a>]
+  {% endif %}
+  {% if entry.arxiv %}
+    [<a href="{{ entry.arxiv }}" target="_blank">arxiv</a>]
+  {% endif %}
+  {% if entry.paper %}
+    [<a href="{{ entry.paper }}" target="_blank">paper</a>]
   {% endif %}
   {% if entry.pdf %}
     [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
   {% endif %}
-  {% if entry.supp %}
-    [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
+  {% if entry.supplement %}
+    [<a href="{{ entry.supplement | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">supplement</a>]
   {% endif %}
   {% if entry.poster %}
     [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
@@ -83,7 +89,10 @@
     [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
   {% endif %}
   {% if entry.code %}
-    [<a href="{{ entry.code }}" target="_blank">Code</a>]
+    [<a href="{{ entry.code }}" target="_blank">code</a>]
+  {% endif %}
+  {% if entry.status %}
+    [{{ entry.status }}]
   {% endif %}
   </span>
 
