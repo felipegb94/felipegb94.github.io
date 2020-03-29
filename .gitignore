@@ -17,3 +17,4 @@ texput.log
 *.toc
 Papers/TR-MeshToPointCloudTool/figures
 *.synctex
+Gemfile.lock
